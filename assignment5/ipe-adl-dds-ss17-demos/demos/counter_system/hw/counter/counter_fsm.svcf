@@ -1,0 +1,7 @@
+mmap new -name counter_fsm -contents {
+    { 'b001 -label "IDLE" -linecolor #ff0000}
+    { 'b010 -label "COUNT" -linecolor #ff0000}
+    { 'b110 -label "OVERFLOW" -linecolor #ff0000}
+    { 'b000 -label "PAUSE" -linecolor #ff0000}
+    { 'b100 -label "OVERFLOW_ERROR" -linecolor #ff0000}
+}

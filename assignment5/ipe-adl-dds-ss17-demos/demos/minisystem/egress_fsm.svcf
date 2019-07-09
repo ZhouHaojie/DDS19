@@ -1,0 +1,5 @@
+mmap new -name egress_fsm -contents {
+    { 'b001 -label "WAIT_CABLE" -linecolor #ff0000}
+    { 'b100 -label "IDLE" -linecolor #ff0000}
+    { 'b010 -label "DATA" -linecolor #ff0000}
+}

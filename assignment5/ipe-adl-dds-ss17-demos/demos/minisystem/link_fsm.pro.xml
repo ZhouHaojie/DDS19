@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<project pname='New Project' version="5.2">
+  <fsm fname='igress_fsm' resetstate='1' numberofinputs='3' numberofoutputs='2'>
+    <ToolsParameters>
+        <Parameters userid="linux:rleys">
+             <Parameter key="ui.generator.verilog.lastPath">/home/rleys/git/dds/demos/minisystem/igress_fsm.v</Parameter>
+        </Parameters>
+    </ToolsParameters>
+    <globals>
+        <name>clk</name>
+        <name>res_n</name>
+    </globals>
+    <inputnames>
+        <name><![CDATA[cable_connected]]></name>
+        <name><![CDATA[data_available]]></name>
+        <name><![CDATA[data_done]]></name>
+    </inputnames>
+    <outputnames>
+        <name><![CDATA[data]]></name>
+        <name><![CDATA[nocable]]></name>
+    </outputnames>
+    <state id='1' posx='-231' posy='-275' color='4294901760' >
+        <sname><![CDATA[WAIT_CABLE]]></sname>
+        <output>01</output>
+    </state>
+    <state id='3' posx='-230' posy='-52' color='4294901760' >
+        <sname><![CDATA[DATA]]></sname>
+        <output>10</output>
+    </state>
+    <trans id='5' color='0' textposx='-230.5' textposy='-163.5'>
+        <name><![CDATA[trans_1]]></name>
+        <default>0</default>
+        <start>1</start>
+        <end>3</end>
+        <condition>
+            <cname><![CDATA[]]></cname>
+            <input>1--</input>
+        </condition>
+    </trans>
+    <trans id='11' color='0' textposx='-158' textposy='-54'>
+        <name><![CDATA[trans_7]]></name>
+        <default>1</default>
+        <start>3</start>
+        <end>3</end>
+        <trackpoint posx='-158' posy='-78' link='0' linkid='0' join='0' color='0' />
+        <trackpoint posx='-158' posy='-30' link='0' linkid='0' join='0' color='0' />
+    </trans>
+    <trans id='12' color='0' textposx='-254.5' textposy='-363.5'>
+        <name><![CDATA[trans_8]]></name>
+        <default>1</default>
+        <start>1</start>
+        <end>1</end>
+        <trackpoint posx='-270' posy='-338' link='0' linkid='0' join='0' color='0' />
+        <trackpoint posx='-199' posy='-337' link='0' linkid='0' join='0' color='0' />
+    </trans>
+    <hypertrans id='13' posx='-398' posy='-275' targetState='1' color='0' >
+        <type>1</type>
+        <name><![CDATA[]]></name>
+        <condition>
+            <cname><![CDATA[]]></cname>
+            <input>000</input>
+        </condition>
+    </hypertrans>
+  </fsm>
+  <fsm fname='egress_fsm' resetstate='1' numberofinputs='3' numberofoutputs='3'>
+    <ToolsParameters>
+        <Parameters userid="linux:rleys">
+             <Parameter key="ui.generator.verilog.lastPath">/home/rleys/git/dds/demos/minisystem/egress_fsm.v</Parameter>
+        </Parameters>
+    </ToolsParameters>
+    <globals>
+        <name>clk</name>
+        <name>res_n</name>
+    </globals>
+    <inputnames>
+        <name><![CDATA[cable_connected]]></name>
+        <name><![CDATA[data_done]]></name>
+        <name><![CDATA[data_available]]></name>
+    </inputnames>
+    <outputnames>
+        <name><![CDATA[idle]]></name>
+        <name><![CDATA[data]]></name>
+        <name><![CDATA[nocable]]></name>
+    </outputnames>
+    <state id='1' posx='-276' posy='-256' color='4294901760' >
+        <sname><![CDATA[WAIT_CABLE]]></sname>
+        <output>001</output>
+    </state>
+    <state id='2' posx='-274' posy='-93' color='4294901760' >
+        <sname><![CDATA[IDLE]]></sname>
+        <output>100</output>
+    </state>
+    <state id='3' posx='-272' posy='34' color='4294901760' >
+        <sname><![CDATA[DATA]]></sname>
+        <output>010</output>
+    </state>
+    <trans id='5' color='0' textposx='-275' textposy='-174.5'>
+        <name><![CDATA[trans_1]]></name>
+        <default>0</default>
+        <start>1</start>
+        <end>2</end>
+        <condition>
+            <cname><![CDATA[]]></cname>
+            <input>1--</input>
+        </condition>
+    </trans>
+    <trans id='6' color='0' textposx='-307' textposy='-364.5'>
+        <name><![CDATA[trans_2]]></name>
+        <default>1</default>
+        <start>1</start>
+        <end>1</end>
+        <trackpoint posx='-322' posy='-331' link='0' linkid='0' join='0' color='0' />
+        <trackpoint posx='-244' posy='-334' link='0' linkid='0' join='0' color='0' />
+    </trans>
+    <trans id='7' color='0' textposx='-267' textposy='-42.5'>
+        <name><![CDATA[trans_3]]></name>
+        <default>0</default>
+        <start>2</start>
+        <end>3</end>
+        <condition>
+            <cname><![CDATA[]]></cname>
+            <input>1-1</input>
+        </condition>
+    </trans>
+    <trans id='8' color='0' textposx='-186' textposy='-105.5'>
+        <name><![CDATA[trans_4]]></name>
+        <default>1</default>
+        <start>2</start>
+        <end>2</end>
+        <trackpoint posx='-187' posy='-124' link='0' linkid='0' join='0' color='0' />
+        <trackpoint posx='-187' posy='-61' link='0' linkid='0' join='0' color='0' />
+    </trans>
+    <trans id='9' color='0' textposx='-205' textposy='28'>
+        <name><![CDATA[trans_5]]></name>
+        <default>1</default>
+        <start>3</start>
+        <end>3</end>
+        <trackpoint posx='-210' posy='6' link='0' linkid='0' join='0' color='0' />
+        <trackpoint posx='-208' posy='70' link='0' linkid='0' join='0' color='0' />
+    </trans>
+    <trans id='10' color='0' textposx='-427.5' textposy='-48.5'>
+        <name><![CDATA[trans_6]]></name>
+        <default>0</default>
+        <start>3</start>
+        <end>2</end>
+        <condition>
+            <cname><![CDATA[]]></cname>
+            <input>110</input>
+        </condition>
+        <trackpoint posx='-359' posy='-3' link='0' linkid='0' join='0' color='0' />
+        <trackpoint posx='-360' posy='-64' link='0' linkid='0' join='0' color='0' />
+    </trans>
+    <hypertrans id='4' posx='-446' posy='-254' targetState='1' color='0' >
+        <type>1</type>
+        <name><![CDATA[]]></name>
+        <condition>
+            <cname><![CDATA[]]></cname>
+            <input>000</input>
+        </condition>
+    </hypertrans>
+  </fsm>
+</project>

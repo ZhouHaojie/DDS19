@@ -1,0 +1,74 @@
+[*]
+[*] GTKWave Analyzer v3.3.81 (w)1999-2017 BSI
+[*] Wed Jul 12 09:49:11 2017
+[*]
+[dumpfile] "/home/rleys/git/dds/demos/minisystem/minisystem_tb.vcd"
+[dumpfile_mtime] "Wed Jul 12 09:45:07 2017"
+[dumpfile_size] 71392
+[savefile] "/home/rleys/git/dds/demos/minisystem/minisystem.gtkw"
+[timestart] 3060000
+[size] 1553 761
+[pos] -1 -1
+*-22.000000 18050000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] minisystem_tb.
+[treeopen] minisystem_tb.minisystem_top.
+[treeopen] minisystem_tb.minisystem_top.link_I.
+[treeopen] minisystem_tb.tblink.
+[sst_width] 229
+[signals_width] 320
+[sst_expanded] 1
+[sst_vpaned_height] 194
+@28
+minisystem_tb.minisystem_top.clk
+minisystem_tb.minisystem_top.cable_connected
+minisystem_tb.minisystem_top.link_I.data_out
+minisystem_tb.minisystem_top.link_I.data_in
+@22
+minisystem_tb.minisystem_top.link_I.serial_in_data[31:0]
+@28
+minisystem_tb.minisystem_top.link_I.igress_data_done
+@22
+minisystem_tb.minisystem_top.link_I.igress_buffer_space[23:0]
+minisystem_tb.minisystem_top.link_I.receive_data[23:0]
+@28
+minisystem_tb.minisystem_top.link_I.receive_data_valid
+minisystem_tb.minisystem_top.link_I.egress_next_data
+@22
+minisystem_tb.minisystem_top.link_I.egress_data[31:0]
+minisystem_tb.minisystem_top.link_I.egress_bit_time[5:0]
+@200
+-FIFO
+@28
+minisystem_tb.minisystem_top.clk_slow
+minisystem_tb.minisystem_top.res_n_clk_slow
+minisystem_tb.minisystem_top.serial_in_shiftin
+minisystem_tb.minisystem_top.serial_in_empty
+minisystem_tb.minisystem_top.serial_in_consume
+minisystem_tb.minisystem_top.serial_in_consume_in_clk
+@22
+minisystem_tb.minisystem_top.received_data[23:0]
+@200
+-TB
+@22
+minisystem_tb.tblink.serial_in_data[31:0]
+@29
+minisystem_tb.tblink.igress_data_done
+@22
+minisystem_tb.tblink.serial_in_count[4:0]
+@28
+minisystem_tb.tblink.cable_connected
+@22
+minisystem_tb.tblink.serial_in_count[4:0]
+@28
+minisystem_tb.tblink.data_in
+minisystem_tb.tblink.igress_last_bit
+@22
+minisystem_tb.minisystem_top.link_I.serial_in_header[7:0]
+minisystem_tb.minisystem_top.link_I.egress_buffer_space[23:0]
+minisystem_tb.minisystem_top.link_I.igress_buffer_space[23:0]
+minisystem_tb.tblink.transmit_data[23:0]
+@28
+minisystem_tb.tblink.transmit_data_consumed
+minisystem_tb.tblink.transmit_data_valid
+[pattern_trace] 1
+[pattern_trace] 0

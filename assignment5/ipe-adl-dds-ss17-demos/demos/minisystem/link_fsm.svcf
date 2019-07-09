@@ -1,0 +1,6 @@
+mmap new -name link_fsm -contents {
+    { 'b000 -label "WAIT_CABLE" -linecolor #ff0000}
+    { 'b100 -label "SYNC" -linecolor #ff0000}
+    { 'b010 -label "IDLE" -linecolor #ff0000}
+    { 'b001 -label "DATA" -linecolor #ff0000}
+}

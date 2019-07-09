@@ -1,0 +1,235 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2016 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 16.13-s036_1, built Tue Dec 20 2016
+Options: -files synthesize.tcl 
+Date:    Tue Jul 09 12:36:17 2019
+Host:    scc-pool-b-32 (x86_64 w/Linux 4.9.0-8-amd64) (4cores*4cpus*Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz 6144KB) (8060188KB)
+OS:      Unsupported OS as /etc does not have release info
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+Sourcing GUI preferences file /home/ws/ufwhq/.cadence/genus/gui.tcl...
+Finished loading tool scripts (11 seconds elapsed).
+
+Sourcing synthesize.tcl...
+
+  Message Summary for Library uk65lscllmvbbr_090c125_wc.lib:
+  **********************************************************
+  Could not find an attribute in the library. [LBR-436]: 1282
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  An unsupported construct was detected in this library. [LBR-40]: 1
+  **********************************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'uk65lscllmvbbr_090c125_wc.lib'.
+        : The nominal operating condition represents either the nominal PVT values if specified in the library source, or the default PVT values (1.0, 1.0, 1.0).
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTR' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Otherwise, the library cell will be marked as unusable and as timing model.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTR' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE3R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE3R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE4R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE4R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE6R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE6R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE8R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE8R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE16R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE16R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE32R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE32R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE64R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE64R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILEP8R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILEP8R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILEP16R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILEP16R' must have an output pin.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM2R'
+        : To use the cell in clock gating, Set cell attribute 'dont_use' false in the library.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM3R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM4R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM6R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM8R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM12R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM16R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM20R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM2R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM3R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM4R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM6R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM8R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM12R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM16R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM20R'
+  Setting attribute of root '/': 'library' = /var/autofs/cadence/umc-65/65nm-stdcells/synopsys/uk65lscllmvbbr_090c125_wc.lib
+module counter #(parameter WIDTH = 8)(
+             |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'counter' with Verilog module in file '../assignment1/counter.v' on line 1, column 14.
+        : A Verilog description is replaced when a new description of the same name and same library is read again.
+    Verilog descriptions are:
+       module
+       macromodule
+    SystemVerilog adds the following descriptions:
+       interface
+       program
+       package.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'counter' from file '../assignment1/counter.v'.
+Warning : Using default parameter value for module elaboration. [CDFG-818]
+        : Elaborating block 'counter' with default parameters value.
+Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
+        : Signal 'reset_sr' in module 'counter' in file '../assignment1/counter.v' on line 75.
+Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
+        : Signal 'ena_sr' in module 'counter' in file '../assignment1/counter.v' on line 75.
+Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
+        : Signal 'value_sr' in module 'counter' in file '../assignment1/counter.v' on line 75.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'counter'.
+Info: Checking for source rtl...
+Info: Check completed for source rtl...
+UM:  flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:            12             20                                      elaborate
+Error: Unable to open contraints.sdc
+Failed on read_sdc
+Encountered problems processing file: synthesize.tcl
+WARNING: This version of the tool is 931 days old.
+genus@root:> read_sdc
+Error   : A required argument was not specified. [TUI-202] [parse_options]
+        : An argument of type '<string>+' was not specified.
+        : Rerun the command specifying all required arguments.
+  read_sdc: reads in design constraints in SDC format 
+
+Usage: read_sdc [-stop_on_errors] [-no_compress] [-echo] [-verbose] <string>+
+
+    [-stop_on_errors]:
+        stops the script when errors encountered 
+    [-no_compress]:
+        turns off advanced compression 
+    [-echo]:
+        display the commands 
+    [-verbose]:
+        additional information about each command 
+    <string>+:
+        the sdc file names to be read 
+genus@root:> report timing
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'counter'.
+        : Use 'report timing -lint' for more information.
+============================================================
+  Generated by:           Genus(TM) Synthesis Solution 16.13-s036_1
+  Generated on:           Jul 09 2019  12:37:29 pm
+  Module:                 counter
+  Wireload mode:          top
+  Area mode:              timing library
+============================================================
+
+Some unconstrained paths have not been displayed.
+Use -unconstrained or set the root attribute 'timing_report_unconstrained' to 'true' to see only these unconstrained paths.
+
+genus@root:> read_sdc constraints.sdc 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	port:counter/clk 
+        : Use the 'external_delay' command to specify and output delay on output ports or to specify an input delay on input ports. See the 'Specifying the Timing and Delay Constraints' Chapter in the 'Timing Analysis Guide' for detailed information.
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	port:counter/clk_sr 
+Statistics for commands executed by read_sdc:
+ "all_outputs"              - successful      1 , failed      0 (runtime  0.00)
+ "create_clock"             - successful      2 , failed      0 (runtime  0.00)
+ "get_port"                 - successful      2 , failed      0 (runtime  0.00)
+ "get_ports"                - successful      2 , failed      0 (runtime  0.00)
+ "set_clock_uncertainty"    - successful      4 , failed      0 (runtime  0.00)
+ "set_load"                 - successful      1 , failed      0 (runtime  0.00)
+ "set_output_delay"         - successful      2 , failed      0 (runtime  0.00)
+Total runtime 0
+genus@root:> report timing
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'counter'.
+============================================================
+  Generated by:           Genus(TM) Synthesis Solution 16.13-s036_1
+  Generated on:           Jul 09 2019  12:37:49 pm
+  Module:                 counter
+  Wireload mode:          top
+  Area mode:              timing library
+============================================================
+
+
+Path 1: MET (383 ps) Setup Check with Pin state_reg[1]/clk->sena
+          Group: clk
+     Startpoint: (R) value_reg[5]/clk
+          Clock: (R) clk
+       Endpoint: (R) state_reg[1]/sena
+          Clock: (R) clk
+
+                     Capture       Launch     
+        Clock Edge:+    2000            0     
+       Src Latency:+       0            0     
+       Net Latency:+       0 (I)        0 (I) 
+           Arrival:=    2000            0     
+                                              
+             Setup:-     280                  
+       Uncertainty:-     200                  
+     Required Time:=    1520                  
+      Launch Clock:-       0                  
+         Data Path:-    1138                  
+             Slack:=     383                  
+
+#------------------------------------------------------------------------------------------
+#   Timing Point    Flags    Arc    Edge      Cell        Fanout  Load Trans Delay Arrival 
+#                                                                 (fF)  (ps)  (ps)   (ps)  
+#------------------------------------------------------------------------------------------
+  value_reg[5]/clk  -       -       R     (arrival)           10     -     0     -       0 
+  value_reg[5]/q    (u)     clk->q  R     unmapped_d_flop      3 206.0     0   540     540 
+  g78/z             (u)     in_2->z R     unmapped_and3        1   2.9     0    98     638 
+  g82/z             (u)     in_0->z R     unmapped_and4        2   5.8     0   160     798 
+  g18/z             (u)     in_0->z R     unmapped_and2        1   2.9     0    54     852 
+  g19/z             (u)     in_0->z R     unmapped_or2         1   2.9     0    54     906 
+  g20/z             (u)     in_0->z R     unmapped_and2        1   2.9     0    54     960 
+  g75/z             (u)     in_2->z R     unmapped_or4         2  11.6     0   177    1138 
+  state_reg[1]/sena <<<     -       R     unmapped_d_flop      2     -     -     0    1138 
+#------------------------------------------------------------------------------------------
+
+(u) : Net has unmapped pin(s).
+

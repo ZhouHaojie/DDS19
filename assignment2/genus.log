@@ -1,0 +1,192 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2016 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 16.13-s036_1, built Tue Dec 20 2016
+Options: -files synthesize.tcl 
+Date:    Mon Jul 08 21:43:38 2019
+Host:    scc-pool-g-44 (x86_64 w/Linux 4.9.0-8-amd64) (4cores*4cpus*Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz 6144KB) (8060180KB)
+OS:      Unsupported OS as /etc does not have release info
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+Finished loading tool scripts (6 seconds elapsed).
+
+Sourcing synthesize.tcl...
+
+  Message Summary for Library uk65lscllmvbbr_090c125_wc.lib:
+  **********************************************************
+  Could not find an attribute in the library. [LBR-436]: 1282
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  An unsupported construct was detected in this library. [LBR-40]: 1
+  **********************************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'uk65lscllmvbbr_090c125_wc.lib'.
+        : The nominal operating condition represents either the nominal PVT values if specified in the library source, or the default PVT values (1.0, 1.0, 1.0).
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTR' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Otherwise, the library cell will be marked as unusable and as timing model.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTR' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE3R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE3R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE4R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE4R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE6R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE6R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE8R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE8R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE16R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE16R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE32R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE32R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE64R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE64R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILEP8R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILEP8R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILEP16R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILEP16R' must have an output pin.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM2R'
+        : To use the cell in clock gating, Set cell attribute 'dont_use' false in the library.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM3R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM4R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM6R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM8R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM12R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM16R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM20R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM2R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM3R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM4R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM6R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM8R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM12R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM16R'
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM20R'
+  Setting attribute of root '/': 'library' = /var/autofs/cadence/umc-65/65nm-stdcells/synopsys/uk65lscllmvbbr_090c125_wc.lib
+module counter #(parameter WIDTH = 8)(
+             |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'counter' with Verilog module in file '../assignment1/counter.v' on line 1, column 14.
+        : A Verilog description is replaced when a new description of the same name and same library is read again.
+    Verilog descriptions are:
+       module
+       macromodule
+    SystemVerilog adds the following descriptions:
+       interface
+       program
+       package.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'counter' from file '../assignment1/counter.v'.
+Warning : Using default parameter value for module elaboration. [CDFG-818]
+        : Elaborating block 'counter' with default parameters value.
+Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
+        : Signal 'reset_sr' in module 'counter' in file '../assignment1/counter.v' on line 75.
+Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
+        : Signal 'ena_sr' in module 'counter' in file '../assignment1/counter.v' on line 75.
+Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
+        : Signal 'value_sr' in module 'counter' in file '../assignment1/counter.v' on line 75.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'counter'.
+Info: Checking for source rtl...
+Info: Check completed for source rtl...
+UM:  flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:            12             14                                      elaborate
+Error: Unable to open contraints.sdc
+Failed on read_sdc
+Encountered problems processing file: synthesize.tcl
+WARNING: This version of the tool is 930 days old.
+genus@root:> read_sdc constraints.sdc 
+Error   : Unknown TCL command in the SDC file. [SDC-234] [read_sdc]
+        : Invalid command 'get_ports{value*}'
+        : The 'read_sdc' command encountered a problem while trying to evaluate a command in the SDC file.
+Error   : A required object parameter could not be found. [TUI-61] [parse_options]
+        : An object of type 'port|pin|hpin|port_bus' named 'invalid' could not be found.
+        : Check to make sure that the object exists and is of the correct type.  The 'what_is' command can be used to determine the type of an object.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '13' of the SDC file 'constraints.sdc': set_output_delay -clock clk 0.5 [get_ports{value*}].
+        : The 'read_sdc' command encountered a problem while trying to evaluate an SDC command. This SDC command will be added to the Tcl variable $::dc::sdc_failed_commands.
+Error   : Unknown TCL command in the SDC file. [SDC-234] [read_sdc]
+        : Invalid command 'get_ports{value*}'
+Error   : A required object parameter could not be found. [TUI-61] [parse_options]
+        : An object of type 'port|pin|hpin|port_bus' named 'invalid' could not be found.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '14' of the SDC file 'constraints.sdc': set_output_delay -clock clk_sr 0.5 [get_ports{value*}].
+Statistics for commands executed by read_sdc:
+ "all_outputs"              - successful      1 , failed      0 (runtime  0.00)
+ "create_clock"             - successful      2 , failed      0 (runtime  0.00)
+ "get_port"                 - successful      2 , failed      0 (runtime  0.00)
+ "set_clock_uncertainty"    - successful      4 , failed      0 (runtime  0.00)
+ "set_load"                 - successful      1 , failed      0 (runtime  0.00)
+ "set_output_delay"         - successful      0 , failed      2 (runtime  0.00)
+Warning : Total failed commands during read_sdc are 2
+Warning : One or more commands failed when these constraints were applied. [SDC-209]
+        : The 'read_sdc' command encountered a problem while processing commands.
+        : You can examine the failed commands or save them to a file by querying the Tcl variable $::dc::sdc_failed_commands.
+Total runtime 0
+genus@root:> read_sdc constraints.sdc 
+Warning : Replacing existing clock definition. [TIM-101]
+        : The clock name is 'clk'
+        : A new clock has been defined with the same name as an existing clock.
+Info    : Replacing an existing timing exception with another. [TIM-304]
+        : Existing timing exception is 'path_groups/clk'.
+        : Existing exception had a name conflict with the newly created exception. The exception created at a later time is maintained.
+Warning : Replacing existing clock definition. [TIM-101]
+        : The clock name is 'clk_sr'
+Info    : Replacing an existing timing exception with another. [TIM-304]
+        : Existing timing exception is 'path_groups/clk_sr'.
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	port:counter/clk 
+        : Use the 'external_delay' command to specify and output delay on output ports or to specify an input delay on input ports. See the 'Specifying the Timing and Delay Constraints' Chapter in the 'Timing Analysis Guide' for detailed information.
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	port:counter/clk_sr 
+Statistics for commands executed by read_sdc:
+ "all_outputs"              - successful      1 , failed      0 (runtime  0.00)
+ "create_clock"             - successful      2 , failed      0 (runtime  0.00)
+ "get_port"                 - successful      2 , failed      0 (runtime  0.00)
+ "get_ports"                - successful      2 , failed      0 (runtime  0.00)
+ "set_clock_uncertainty"    - successful      4 , failed      0 (runtime  0.00)
+ "set_load"                 - successful      1 , failed      0 (runtime  0.00)
+ "set_output_delay"         - successful      2 , failed      0 (runtime  0.00)
+Total runtime 0
+genus@root:> quit
+Normal exit.

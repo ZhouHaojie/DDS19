@@ -1,0 +1,2 @@
+SOFTINCLUDE /var/autofs/cadence2/INCISIVE152/tools/inca/files/cds.lib
+define worklib ../worklib

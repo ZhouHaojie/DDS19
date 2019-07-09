@@ -1,0 +1,378 @@
+irun(64): 15.20-s019: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s019: Started on Jul 09, 2019 at 14:04:04 CEST
+irun
+	-sv
+	+define+IRUN
+	-access +rw
+	-notimingchecks
+	minisystem_tb.v
+	minisystem_top.v
+	link.v
+	igress_fsm.v
+	egress_fsm.v
+	counter_match.v
+	../async_fifo/ram/ram_1w1r_2c.v
+	../async_fifo/src/fifo_reg.v
+	../async_fifo/src/async_standard_fifo.v
+	../async_fifo/src/sync_r2w.v
+	../async_fifo/src/sync_w2r.v
+	../async_fifo/src/sync_w2r_hs.v
+	../async_fifo/src/empty_logic.v
+	../async_fifo/src/full_logic.v
+	../async_fifo/src/empty_logic_spec_shift_out.v
+	../async_fifo/src/empty_logic_spec_shift_out_1_inc.v
+	../async_fifo/src/full_logic_spec_shift_in.v
+	../async_fifo/src/full_logic_spec_shift_in_1_inc.v
+	../async_fifo/src/async_fifo.v
+	/var/autofs/cadence2/umc-65//rams/512x32/SJKA65_512X32X1CM4/SJKA65_512X32X1CM4.v
+	/var/autofs/cadence2/umc-65//65nm-pads/verilog/u065gioll18gpir.v
+file: minisystem_tb.v
+	module worklib.minisystem_tb:v
+		errors: 0, warnings: 0
+file: minisystem_top.v
+	module worklib.minisystem_top:v
+		errors: 0, warnings: 0
+file: link.v
+	module worklib.link:v
+		errors: 0, warnings: 0
+file: igress_fsm.v
+	module worklib.igress_fsm:v
+		errors: 0, warnings: 0
+file: egress_fsm.v
+	module worklib.egress_fsm:v
+		errors: 0, warnings: 0
+file: counter_match.v
+	module worklib.counter_match:v
+		errors: 0, warnings: 0
+file: ../async_fifo/ram/ram_1w1r_2c.v
+	module worklib.ram_512x32:v
+		errors: 0, warnings: 0
+file: ../async_fifo/src/fifo_reg.v
+	module worklib.fifo_reg:v
+		errors: 0, warnings: 0
+file: ../async_fifo/src/async_standard_fifo.v
+	module worklib.async_standard_fifo:v
+		errors: 0, warnings: 0
+file: ../async_fifo/src/sync_r2w.v
+	module worklib.sync_r2w:v
+		errors: 0, warnings: 0
+file: ../async_fifo/src/sync_w2r.v
+	module worklib.sync_w2r:v
+		errors: 0, warnings: 0
+file: ../async_fifo/src/sync_w2r_hs.v
+	module worklib.sync_w2r_hs:v
+		errors: 0, warnings: 0
+file: ../async_fifo/src/empty_logic.v
+	module worklib.empty_logic:v
+		errors: 0, warnings: 0
+file: ../async_fifo/src/full_logic.v
+	module worklib.full_logic:v
+		errors: 0, warnings: 0
+file: ../async_fifo/src/empty_logic_spec_shift_out.v
+	module worklib.empty_logic_spec_shift_out:v
+		errors: 0, warnings: 0
+file: ../async_fifo/src/empty_logic_spec_shift_out_1_inc.v
+	module worklib.empty_logic_spec_shift_out_1_inc:v
+		errors: 0, warnings: 0
+file: ../async_fifo/src/full_logic_spec_shift_in.v
+	module worklib.full_logic_spec_shift_in:v
+		errors: 0, warnings: 0
+file: ../async_fifo/src/full_logic_spec_shift_in_1_inc.v
+	module worklib.full_logic_spec_shift_in_1_inc:v
+		errors: 0, warnings: 0
+file: ../async_fifo/src/async_fifo.v
+	module worklib.async_fifo:v
+		errors: 0, warnings: 0
+file: /var/autofs/cadence2/umc-65//rams/512x32/SJKA65_512X32X1CM4/SJKA65_512X32X1CM4.v
+	module worklib.SJKA65_512X32X1CM4:v
+		errors: 0, warnings: 0
+file: /var/autofs/cadence2/umc-65//65nm-pads/verilog/u065gioll18gpir.v
+	module worklib.DI_BTB_G:v
+		errors: 0, warnings: 0
+	module worklib.DI_G:v
+		errors: 0, warnings: 0
+	module worklib.DI_P:v
+		errors: 0, warnings: 0
+	module worklib.IAABREAK:v
+		errors: 0, warnings: 0
+	module worklib.IACLAMP:v
+		errors: 0, warnings: 0
+	module worklib.IACLAMPC:v
+		errors: 0, warnings: 0
+	module worklib.IAGBREAK:v
+		errors: 0, warnings: 0
+	module worklib.IANAIO:v
+		errors: 0, warnings: 0
+	module worklib.IANAIOC:v
+		errors: 0, warnings: 0
+	module worklib.ICORNER:v
+		errors: 0, warnings: 0
+	module worklib.ICORNERA:v
+		errors: 0, warnings: 0
+	module worklib.IDABREAKL:v
+		errors: 0, warnings: 0
+	module worklib.IDABREAKR:v
+		errors: 0, warnings: 0
+	module worklib.IDCLAMPC:v
+		errors: 0, warnings: 0
+	module worklib.IDDBREAK:v
+		errors: 0, warnings: 0
+	module worklib.IDDIOBREAK:v
+		errors: 0, warnings: 0
+	module worklib.IFILLER0:v
+		errors: 0, warnings: 0
+	module worklib.IFILLER1:v
+		errors: 0, warnings: 0
+	module worklib.IFILLER10:v
+		errors: 0, warnings: 0
+	module worklib.IFILLER20:v
+		errors: 0, warnings: 0
+	module worklib.IFILLER5:v
+		errors: 0, warnings: 0
+	module worklib.IUMA:v
+		errors: 0, warnings: 0
+	module worklib.IUMB:v
+		errors: 0, warnings: 0
+	module worklib.IVDD:v
+		errors: 0, warnings: 0
+	module worklib.IVDDANA:v
+		errors: 0, warnings: 0
+	module worklib.IVDDANAC:v
+		errors: 0, warnings: 0
+	module worklib.IVDDIO:v
+		errors: 0, warnings: 0
+	module worklib.IVSS:v
+		errors: 0, warnings: 0
+	module worklib.IVSSANA:v
+		errors: 0, warnings: 0
+	module worklib.IVSSANAC:v
+		errors: 0, warnings: 0
+	module worklib.IVSSIO:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	link tblink (
+	          |
+ncelab: *W,CUVWSP (./minisystem_tb.v,88|11): 2 output ports were not connected:
+ncelab: (./link.v,15): receive_data
+ncelab: (./link.v,16): receive_data_valid
+
+	link tblink (
+	          |
+ncelab: *W,CUVWSI (./minisystem_tb.v,88|11): 1 input port was not connected:
+ncelab: (./link.v,17): receive_data_consumed
+
+	IUMA clk_io (
+	          |
+ncelab: *W,CUVWSI (./minisystem_top.v,19|11): 1 input port was not connected:
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): IDDQ
+
+	IUMA clk_io (
+	          |
+ncelab: *W,CUVWSB (./minisystem_top.v,19|11): 4 inout ports were not connected:
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): VDD
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): VDDIO
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): VSS
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): VSSIO
+
+	IUMA resn_io (
+	           |
+ncelab: *W,CUVWSI (./minisystem_top.v,27|12): 1 input port was not connected:
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): IDDQ
+
+	IUMA resn_io (
+	           |
+ncelab: *W,CUVWSB (./minisystem_top.v,27|12): 4 inout ports were not connected:
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): VDD
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): VDDIO
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): VSS
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): VSSIO
+
+	IUMA cableconnect_io (
+	                   |
+ncelab: *W,CUVWSI (./minisystem_top.v,35|20): 1 input port was not connected:
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): IDDQ
+
+	IUMA cableconnect_io (
+	                   |
+ncelab: *W,CUVWSB (./minisystem_top.v,35|20): 4 inout ports were not connected:
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): VDD
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): VDDIO
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): VSS
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): VSSIO
+
+	IUMA datain_io (
+	             |
+ncelab: *W,CUVWSI (./minisystem_top.v,43|14): 1 input port was not connected:
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): IDDQ
+
+	IUMA datain_io (
+	             |
+ncelab: *W,CUVWSB (./minisystem_top.v,43|14): 4 inout ports were not connected:
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): VDD
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): VDDIO
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): VSS
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): VSSIO
+
+	IUMA dataout_io (
+	              |
+ncelab: *W,CUVWSI (./minisystem_top.v,51|15): 1 input port was not connected:
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): IDDQ
+
+	IUMA dataout_io (
+	              |
+ncelab: *W,CUVWSB (./minisystem_top.v,51|15): 4 inout ports were not connected:
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): VDD
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): VDDIO
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): VSS
+ncelab: (/var/autofs/cadence2/umc-65/65nm-pads/verilog/u065gioll18gpir.v,425): VSSIO
+
+		)  fifo_input (
+		            |
+ncelab: *W,CUVWSP (./minisystem_top.v,191|14): 1 output port was not connected:
+ncelab: (../async_fifo/src/async_fifo.v,67): d_out_nxt
+
+	SJKA65_512X32X1CM4 RAM512x32 (
+	                           |
+ncelab: *W,CUVWSI (../async_fifo/ram/ram_1w1r_2c.v,39|28): 5 input ports were not connected:
+ncelab: (/var/autofs/cadence2/umc-65/rams/512x32/SJKA65_512X32X1CM4/SJKA65_512X32X1CM4.v,78): DVSE
+ncelab: (/var/autofs/cadence2/umc-65/rams/512x32/SJKA65_512X32X1CM4/SJKA65_512X32X1CM4.v,78): DVS0
+ncelab: (/var/autofs/cadence2/umc-65/rams/512x32/SJKA65_512X32X1CM4/SJKA65_512X32X1CM4.v,78): DVS1
+ncelab: (/var/autofs/cadence2/umc-65/rams/512x32/SJKA65_512X32X1CM4/SJKA65_512X32X1CM4.v,78): DVS2
+ncelab: (/var/autofs/cadence2/umc-65/rams/512x32/SJKA65_512X32X1CM4/SJKA65_512X32X1CM4.v,78): DVS3
+
+		)  fifo_output (
+		             |
+ncelab: *W,CUVWSP (./minisystem_top.v,230|15): 1 output port was not connected:
+ncelab: (../async_fifo/src/async_fifo.v,67): d_out_nxt
+
+	counter_match #(.SIZE(16)) counter1 (
+	                                  |
+ncelab: *W,CUVWSP (./minisystem_top.v,312|35): 2 output ports were not connected:
+ncelab: (./counter_match.v,12): value
+ncelab: (./counter_match.v,13): overflow
+
+	Top level design units:
+		minisystem_tb
+		DI_BTB_G
+		DI_G
+		DI_P
+		IAABREAK
+		IACLAMP
+		IACLAMPC
+		IAGBREAK
+		IANAIO
+		IANAIOC
+		ICORNER
+		ICORNERA
+		IDABREAKL
+		IDABREAKR
+		IDCLAMPC
+		IDDBREAK
+		IDDIOBREAK
+		IFILLER0
+		IFILLER1
+		IFILLER10
+		IFILLER20
+		IFILLER5
+		IUMB
+		IVDD
+		IVDDANA
+		IVDDANAC
+		IVDDIO
+		IVSS
+		IVSSANA
+		IVSSANAC
+		IVSSIO
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+		.wdata_a(d_in),
+		            |
+ncelab: *W,CUVMPW (../async_fifo/src/async_standard_fifo.v,117|14): port sizes differ in port connection (24/32).
+		.rdata_b(d_out),
+		             |
+ncelab: *W,CUVMPW (../async_fifo/src/async_standard_fifo.v,122|15): port sizes differ in port connection (24/32).
+		.wdata_a(d_in),
+		            |
+ncelab: *W,CUVMPW (../async_fifo/src/async_standard_fifo.v,117|14): port sizes differ in port connection (24/32).
+		.rdata_b(d_out),
+		             |
+ncelab: *W,CUVMPW (../async_fifo/src/async_standard_fifo.v,122|15): port sizes differ in port connection (24/32).
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.IUMA:v <0x19d7f65c>
+			streams:   0, words:     0
+		worklib.IUMA:v <0x24861240>
+			streams:   0, words:     0
+		worklib.IUMA:v <0x433c8d57>
+			streams:   0, words:     0
+		worklib.IUMA:v <0x4ac362dc>
+			streams:   0, words:     0
+		worklib.IUMB:v <0x214cfc2b>
+			streams:   0, words:     0
+		worklib.SJKA65_512X32X1CM4:v <0x1e2f7095>
+			streams:  97, words: 63364
+		worklib.SJKA65_512X32X1CM4:v <0x69af5a8d>
+			streams:  97, words: 63364
+		worklib.async_fifo:v <0x2cfb68a2>
+			streams:   5, words:  1283
+		worklib.async_standard_fifo:v <0x3dc4f3ab>
+			streams:   1, words:   151
+		worklib.counter_match:v <0x41c8263c>
+			streams:   6, words:  1722
+		worklib.egress_fsm:v <0x6f973b70>
+			streams:   4, words:  2057
+		worklib.egress_fsm:v <0x74bba2b4>
+			streams:   4, words:  2057
+		worklib.empty_logic:v <0x35b5b60c>
+			streams:  10, words:  3723
+		worklib.fifo_reg:v <0x4e3f7227>
+			streams:  13, words: 10340
+		worklib.full_logic:v <0x61656837>
+			streams:  12, words:  3871
+		worklib.igress_fsm:v <0x16fb2648>
+			streams:   4, words:  1615
+		worklib.igress_fsm:v <0x2baac254>
+			streams:   4, words:  1615
+		worklib.link:v <0x369017c0>
+			streams:  16, words:  5938
+		worklib.link:v <0x3ecdb942>
+			streams:  16, words:  6148
+		worklib.minisystem_tb:v <0x0c4721b5>
+			streams:  10, words:  6527
+		worklib.minisystem_top:v <0x29a53155>
+			streams:  30, words: 10932
+		worklib.ram_512x32:v <0x64566ebe>
+			streams:   4, words:   760
+		worklib.sync_r2w:v <0x40f0f7a4>
+			streams:   3, words:   927
+		worklib.sync_w2r:v <0x33f815be>
+			streams:   3, words:   927
+		worklib.sync_w2r_hs:v <0x69fdb389>
+			streams:   8, words:  2329
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                70      51
+		Primitives:            454       8
+		Timing outputs:        140     138
+		Registers:             459     259
+		Scalar wires:          567       -
+		Expanded wires:        212      10
+		Vectored wires:         34       -
+		Named events:            8       4
+		Always blocks:          66      63
+		Initial blocks:          3       2
+		Cont. assignments:      85      81
+		Pseudo assignments:     38      26
+		Timing checks:         700       -
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.minisystem_tb:v
+Loading snapshot worklib.minisystem_tb:v .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /var/autofs/cadence2/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+Simulation complete via $finish(1) at time 168050 NS + 0
+./minisystem_tb.v:58 		#15000 $finish();
+ncsim> exit
+TOOL:	irun(64)	15.20-s019: Exiting on Jul 09, 2019 at 14:04:14 CEST  (total: 00:00:10)

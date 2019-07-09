@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<project pname='New Project' version="5.2">
+  <fsm fname='counter_fsm' resetstate='1' numberofinputs='4' numberofoutputs='3'>
+    <ToolsParameters>
+        <Parameters userid="windows:leysr">
+             <Parameter key="ui.generator.verilog.lastPath">C:/Users/leysr/git/adl/lectures/dds/current/demos/new/hw/counter/counter_fsm.v</Parameter>
+        </Parameters>
+    </ToolsParameters>
+    <globals>
+        <name>clk</name>
+        <name>res_n</name>
+    </globals>
+    <inputnames>
+        <name><![CDATA[enable]]></name>
+        <name><![CDATA[last_value]]></name>
+        <name><![CDATA[reinit]]></name>
+        <name><![CDATA[clear_overflow]]></name>
+    </inputnames>
+    <outputnames>
+        <name><![CDATA[overflow]]></name>
+        <name><![CDATA[counting]]></name>
+        <name><![CDATA[idle]]></name>
+    </outputnames>
+    <state id='1' posx='-357' posy='-293' color='4294901760' >
+        <sname><![CDATA[IDLE]]></sname>
+        <output>001</output>
+    </state>
+    <state id='2' posx='-354' posy='-110' color='4294901760' >
+        <sname><![CDATA[COUNT]]></sname>
+        <output>010</output>
+    </state>
+    <state id='7' posx='-353' posy='30' color='4294901760' >
+        <sname><![CDATA[OVERFLOW]]></sname>
+        <output>110</output>
+    </state>
+    <state id='8' posx='-185' posy='-110' color='4294901760' >
+        <sname><![CDATA[PAUSE]]></sname>
+        <output>000</output>
+    </state>
+    <state id='15' posx='-154.291' posy='27.717' color='4294901760' >
+        <sname><![CDATA[OVERFLOW_ERROR]]></sname>
+        <output>100</output>
+    </state>
+    <trans id='3' color='0' textposx='-355.5' textposy='-201.5'>
+        <name><![CDATA[enable]]></name>
+        <default>0</default>
+        <start>1</start>
+        <end>2</end>
+        <condition>
+            <cname><![CDATA[Enable]]></cname>
+            <input>1-00</input>
+        </condition>
+    </trans>
+    <trans id='4' color='0' textposx='-460.5' textposy='-144'>
+        <name><![CDATA[trans_2]]></name>
+        <default>1</default>
+        <start>2</start>
+        <end>2</end>
+        <trackpoint posx='-404' posy='-154' link='0' linkid='0' join='0' color='0' />
+        <trackpoint posx='-423' posy='-96' link='0' linkid='0' join='0' color='0' />
+    </trans>
+    <trans id='5' color='0' textposx='-307' textposy='-52.5'>
+        <name><![CDATA[overflow]]></name>
+        <default>0</default>
+        <start>2</start>
+        <end>7</end>
+        <condition>
+            <cname><![CDATA[]]></cname>
+            <input>1100</input>
+        </condition>
+        <trackpoint posx='-316' posy='-39' link='0' linkid='0' join='0' color='0' />
+    </trans>
+    <trans id='6' color='0' textposx='-364.5' textposy='-339'>
+        <name><![CDATA[trans_4]]></name>
+        <default>1</default>
+        <start>1</start>
+        <end>1</end>
+        <trackpoint posx='-416' posy='-338' link='0' linkid='0' join='0' color='0' />
+        <trackpoint posx='-313' posy='-340' link='0' linkid='0' join='0' color='0' />
+    </trans>
+    <trans id='9' color='0' textposx='-306.5' textposy='-111'>
+        <name><![CDATA[trans_5]]></name>
+        <default>0</default>
+        <start>2</start>
+        <end>8</end>
+        <condition>
+            <cname><![CDATA[]]></cname>
+            <input>0-0-</input>
+        </condition>
+    </trans>
+    <trans id='11' color='0' textposx='-381.5' textposy='92'>
+        <name><![CDATA[trans_6]]></name>
+        <default>1</default>
+        <start>7</start>
+        <end>7</end>
+        <trackpoint posx='-389' posy='86' link='0' linkid='0' join='0' color='0' />
+        <trackpoint posx='-312' posy='86' link='0' linkid='0' join='0' color='0' />
+    </trans>
+    <trans id='12' color='0' textposx='-128' textposy='-110'>
+        <name><![CDATA[trans_7]]></name>
+        <default>1</default>
+        <start>8</start>
+        <end>8</end>
+        <trackpoint posx='-128' posy='-142' link='0' linkid='0' join='0' color='0' />
+        <trackpoint posx='-128' posy='-78' link='0' linkid='0' join='0' color='0' />
+    </trans>
+    <trans id='13' color='0' textposx='-254.5' textposy='-169'>
+        <name><![CDATA[trans_8]]></name>
+        <default>0</default>
+        <start>8</start>
+        <end>2</end>
+        <condition>
+            <cname><![CDATA[]]></cname>
+            <input>1-00</input>
+        </condition>
+        <trackpoint posx='-268' posy='-148' link='0' linkid='0' join='0' color='0' />
+    </trans>
+    <trans id='14' color='0' textposx='-483.5' textposy='-29'>
+        <name><![CDATA[clear_overflow]]></name>
+        <default>0</default>
+        <start>7</start>
+        <end>2</end>
+        <condition>
+            <cname><![CDATA[]]></cname>
+            <input>--01</input>
+        </condition>
+        <trackpoint posx='-394' posy='-18' link='0' linkid='0' join='0' color='0' />
+    </trans>
+    <trans id='16' color='0' textposx='-277.667' textposy='33.478'>
+        <name><![CDATA[trans_10]]></name>
+        <default>0</default>
+        <start>7</start>
+        <end>15</end>
+        <condition>
+            <cname><![CDATA[]]></cname>
+            <input>-100</input>
+        </condition>
+    </trans>
+    <trans id='17' color='0' textposx='-69.7544' textposy='33.2604'>
+        <name><![CDATA[trans_11]]></name>
+        <default>1</default>
+        <start>15</start>
+        <end>15</end>
+        <trackpoint posx='-70.2164' posy='-11.0868' link='0' linkid='0' join='0' color='0' />
+        <trackpoint posx='-69.2925' posy='77.6076' link='0' linkid='0' join='0' color='0' />
+    </trans>
+    <hypertrans id='10' posx='-503' posy='-289' targetState='1' color='0' >
+        <type>1</type>
+        <name><![CDATA[]]></name>
+        <condition>
+            <cname><![CDATA[]]></cname>
+            <input>--10</input>
+        </condition>
+    </hypertrans>
+  </fsm>
+</project>

@@ -1,0 +1,99 @@
+*** Message Type: info ***
+When: Mon Jul 08 05:31:41 PM CEST 2019
+SimVision started.
+Version: TOOL:  simvision(64)   15.20-s019
+User: ufwhq
+Host: scc-pool-b-31
+Platform: Linux/x86_64/4.9.0-8-amd64
+Started: Mon Jul 08 05:31:41 PM CEST 2019
+Command: /var/autofs/cadence2/INCISIVE152/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:scc-pool-b-31:35073 -64BIT -nocopyright
+Work Directory: /home/ws/ufwhq/dds19/assignment1
+ 
+*** Message Type: info ***
+When: Mon Jul 08 05:31:42 PM CEST 2019
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Mon Jul 08 05:31:43 PM CEST 2019
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Mon Jul 08 05:31:43 PM CEST 2019
+Connect to Simulator
+      Design: worklib.counter_tb:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:       ncsim(64)       15.20-s019
+        User: ufwhq
+        Host: scc-pool-b-31
+Time Started: Mon Jul 08 05:31:38 PM CEST 2019
+  Process ID: 28808
+   Directory: /home/ws/ufwhq/dds19/assignment1
+     Command: irun -gui -access +rw -f rtl.lst
+
+ 
+*** Message Type: info ***
+When: Mon Jul 08 05:31:44 PM CEST 2019
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Mon Jul 08 05:31:53 PM CEST 2019
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Mon Jul 08 05:33:04 PM CEST 2019
+Delete browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Mon Jul 08 05:33:16 PM CEST 2019
+Delete waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Mon Jul 08 06:24:27 PM CEST 2019
+Exit NC-Sim: user
+      Design: worklib.counter_tb:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:       ncsim(64)       15.20-s019
+        User: ufwhq
+        Host: scc-pool-b-31
+Time Started: Mon Jul 08 05:31:38 PM CEST 2019
+  Process ID: 28808
+   Directory: /home/ws/ufwhq/dds19/assignment1
+     Command: irun -gui -access +rw -f rtl.lst
+
+ 
+*** Message Type: error ***
+When: Mon Jul 08 06:24:27 PM CEST 2019
+NC-Sim Crashed:
+      Design: worklib.counter_tb:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:       ncsim(64)       15.20-s019
+        User: ufwhq
+        Host: scc-pool-b-31
+Time Started: Mon Jul 08 05:31:38 PM CEST 2019
+  Process ID: 28808
+   Directory: /home/ws/ufwhq/dds19/assignment1
+     Command: irun -gui -access +rw -f rtl.lst
+      Design: worklib.counter_tb:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:   ncsim(64)       15.20-s019
+        User: ufwhq
+        Host: scc-pool-b-31
+Time Started: Mon Jul 08 05:31:38 PM CEST 2019
+  Process ID: 28808
+   Directory: /home/ws/ufwhq/dds19/assignment1
+     Command: irun -gui -access +rw -f rtl.lst
+
+Outstanding STRAP Requests:
+        strap::reinvoke savestate /home/ws/ufwhq/dds19/assignment1/.simvision/28813_ufwhq__autosave.tcl {# NC-Sim Command File
+# TOOL: ncsim(64)       15.20-s019
+#
+} {simvision -input /home/ws/ufwhq/dds19/assignment1/.simvision/28813_ufwhq__autosave.tcl.svcf}
+ 
+*** Message Type: info ***
+When: Mon Jul 08 06:24:29 PM CEST 2019
+SimVision Exit.
+ 
